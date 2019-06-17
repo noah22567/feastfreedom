@@ -1,0 +1,15 @@
+{% extend "base.html" %}
+
+<h1><img src="{{Kitchen.img.url}}"></h1>
+<ul>
+<li> {{Kitchen.Starttime}}</li>
+<li> {{Kitchen.Endtime}}</li>
+</ul>
+    {% for item in Menu %}
+<ul><li{{item.get_all}}</li></ul>
+
+    {% empty %}
+<h2> No items on the menu </h2>
+
+
+<>

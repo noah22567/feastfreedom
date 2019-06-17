@@ -1,0 +1,10 @@
+{% include "base.html" %}
+
+<h1>Kitchens</h1>
+<ul>
+{% for Kitchen in object_list %}
+    <li>{{ Kitchen.pub_date|date }} - {{ Kitchen.headline }}</li>
+{% empty %}
+    <li>No Kitchens yet.</li>
+{% endfor %}
+</ul>

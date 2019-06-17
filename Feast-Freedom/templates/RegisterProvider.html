@@ -1,6 +1,7 @@
 {% extends 'base.html' %}
 
 
+{% block content %}
   <h2>Sign up</h2>
   <form method="post">
     {% csrf_token %}
@@ -12,11 +13,17 @@
           <small style="color: grey">{{ field.help_text }}</small>
         {% endif %}
         {% for error in field.errors %}
-          <p> style="color: red">{{ error }}</p>
+          <p style="color: red">{{ error }}</p>
         {% endfor %}
       </p>
     {% endfor %}
-    <button type="submit">Sign up</button>
+    <button type="submit">Continue</button>
   </form>
+
+      <form action="http://127.0.0.1:8000/provider/">
+      <input type="submit" value="logout" />
+      </form>
+{% endblock %}
+
 
 

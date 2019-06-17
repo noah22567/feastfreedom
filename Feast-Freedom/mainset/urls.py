@@ -18,6 +18,11 @@ from django.urls import path, include,re_path
 from django.views.generic.base import TemplateView
 from provider.views import registerProviderView, registerKitchenView
 from users.views import signup
+from provider.views import listViewKitchen
+from mainset import settings
+from django.contrib.staticfiles.urls import static
+from django.contrib.staticfiles.urls import staticfiles_urlpatterns
+
 
 
 urlpatterns = [
@@ -25,9 +30,16 @@ urlpatterns = [
     # path('admin/users/', include('users.urls')),
     re_path(r'^accounts/', include('django.contrib.auth.urls')),
     re_path(r'^accounts/profile/', TemplateView.as_view(template_name='home.html'), name='home'),
-    re_path(r'^provider/register',registerProviderView, name='register_provider'),
-    re_path(r'^provider/kitchen',registerKitchenView , name='register_provider'),
-
+    re_path(r'^provider/', include("provider.urls")),
     # path('admin/users/myuser/add/', TemplateView.as_view(template_name='home.html'))
     re_path(r'signup/$', signup, name='signup'),
+
+
 ]
+
+urlpatterns += staticfiles_urlpatterns()
+urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+
+# if settings.DEBUG:
+#     urlpatterns = urlpatterns + (settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+

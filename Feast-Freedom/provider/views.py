@@ -6,64 +6,73 @@ from django.contrib.auth.forms import UserCreationForm
 from django.shortcuts import render, redirect
 from .forms import SignupProvider,KitchenCreate
 from django.views.generic.edit import FormView
-
+from django.views.generic.list import ListView
+from django.views.generic.detail import DetailView
+from .models import Kitchen
+from django.utils import timezone
+from django.http import HttpResponse, HttpResponseRedirect
+from django.urls import reverse
 
 def registerProviderView(request):
 
-
     if request.method == 'POST':
-        form = SignupProvider(request.POST)
+        initial = {'ServiceProviderName': request.session.get('ServiceProviderName', None)}
+        form = SignupProvider(request.POST,initial=initial)
         if form.is_valid():
-            request.User.make_provider()
-            form.save()
-            username = form.cleaned_data.get('username')
-            raw_password = form.cleaned_data.get('password1')
-            user = authenticate(username=username, password=raw_password)
-            login(request, user)
-            return redirect('home')
+            request.session['ServiceProviderName'] = form.cleaned_data['ServiceProviderName']
+            return HttpResponseRedirect(reverse('registerKitchenView'))
     else:
         form = SignupProvider()
-    return render(request, 'RegisterProvider.html', {form:'form'})
+    return render(request, 'RegisterProvider.html', {'form':form})
+
 
 def registerKitchenView(request):
 
-    template_name = 'RegisterProvider.html'
-    form_class = KitchenCreate
-    success_url = '/thanks/'
-
-    # def form_valid(self, form):
-    #     # This method is called when valid form data has been POSTed.
-    #     # It should return an HttpResponse.
-    #     form.send_email()
-    #     return super().form_valid(form)
-
-    print("Call kitchen create!!")
     if request.method == 'POST':
         form = KitchenCreate(request.POST)
-        print(form)
         if form.is_valid():
-            request.User.make_provider()
             form.save()
-            username = form.cleaned_data.get('username')
-            raw_password = form.cleaned_data.get('password1')
             user = authenticate(username=username, password=raw_password)
             login(request, user)
             return redirect('home')
     else:
-        print("It is GET!!")
         form = KitchenCreate()
-        # print("else states")
-        print(type(form))
-    #
-    # print("test3")
-    # print(form)
-    return render(request, 'registertest.html', {form:'form'})
+    return render(request, 'RegisterKitchen.html', {'form':form})
+
+
+class viewKitchen(DetailView):
+    # lookup_field = pk
+    model = Kitchen
+
+
+class listViewKitchen(ListView):
+    model = Kitchen
+    paginate_by = 100  # if pagination is desired
+
+    def get_context_data(self, **kwargs):
+
+        context = super().get_context_data(**kwargs)
+        context['now'] = timezone.now()
+
+        return context
 
 
 
 
-#     creation form
-    # form --> UserID = request.User.pk
+from django.http import HttpResponse
+import os
+def my_image(request):
+
+    lookup_field = Kitchenimg
+
+    # os.chdir('C:\\Users\\19198\\Desktop\\freastfreedom\\Feast-Freedom\\templates\\provider\\images')
+
+
+    image_data = open(lookup_field, "rb").read()
+
+    return HttpResponse(image_data, mimetype="image/png")
+
+
 
 
 

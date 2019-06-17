@@ -30,7 +30,9 @@ def signup(request):
             user = authenticate(username=username, password=raw_password)
             login(request, user)
             return redirect('home')
+            # return HttpResponseRedirect(reverse('step2'))
     else:
         form = SignUpForm()
     return render(request, 'signup.html', {'form': form})
+
 

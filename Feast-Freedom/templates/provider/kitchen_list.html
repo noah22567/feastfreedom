@@ -3,8 +3,18 @@
 <h1>Kitchens</h1>
 <ul>
 {% for Kitchen in object_list %}
-    <li>{{ Kitchen.pub_date|date }} - {{ Kitchen.headline }}</li>
+    <li>
+        <form action="<http://127.0.0.1:8000/provider/{{Kitchen.pk}}">
+
+        <input type="image" src="{{ Kitchen.Kitchenimg.url }} " alt ="{{Kitchen.Endtime}}" />
+            <h4>Closing at : {{ Kitchen.Endtime }}</h4></li>
+
+<!--    <img src="Kitchen.Kitchenimg.url" alt="Italian Trulli">-->
+
 {% empty %}
     <li>No Kitchens yet.</li>
 {% endfor %}
 </ul>
+
+
+

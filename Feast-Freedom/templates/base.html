@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>{% block title %}Example Company{% endblock %}</title>
+</head>
+<body>
+  <main>
+    <ul>
+
+    {% block login %}
+    {%  if User.is_active %}
+      <li>
+      <form action="http://127.0.0.1:8000/accounts/logout/">
+      <input type="submit" value="logout" />
+      </form>
+      </li>
+    {% else %}
+      <li>
+      <form action="http://127.0.0.1:8000/accounts/login/">
+      <input type="submit" value="login" />
+      </form>
+      </li>
+      <li>
+      <form action="http://127.0.0.1:8000/admin/users/signup/">
+      <input type="submit" value="signup" />
+      </form>
+      </li>
+    {% endif %}
+    {% endblock %}
+
+
+    {% block usernav %}
+      {% if User.is_provider and User.is_active %}
+      <li>
+      <form action="http://127.0.0.1:8000/accounts/kitchen/">
+      <input type="submit" value="register Kitchen" />
+      </form>
+      </li>
+
+      {% else %}
+      <li>
+      <form action="http://127.0.0.1:8000/provider/register">
+      <input type="submit" value="register as a Provider" />
+      </form>
+      </li>
+
+    {% endif %}
+
+    {% endblock %}
+    </ul>
+
+    {% block content %}
+    <h1>List of kitchens</h1>
+    {% endblock %}
+  </main>
+</body>
+</html>
+

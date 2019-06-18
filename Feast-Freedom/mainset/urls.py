@@ -22,7 +22,7 @@ from provider.views import listViewKitchen
 from mainset import settings
 from django.contrib.staticfiles.urls import static
 from django.contrib.staticfiles.urls import staticfiles_urlpatterns
-
+from menu.views import createMenuItem,MenuList
 
 
 urlpatterns = [
@@ -33,6 +33,8 @@ urlpatterns = [
     re_path(r'^provider/', include("provider.urls")),
     # path('admin/users/myuser/add/', TemplateView.as_view(template_name='home.html'))
     re_path(r'signup/$', signup, name='signup'),
+    path("menu/",MenuList.as_view)
+    path("menu/create", createMenuItem.as_view)
 
 
 ]

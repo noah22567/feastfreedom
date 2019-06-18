@@ -28,12 +28,25 @@
       </li>
     {% endif %}
     {% endblock %}
+    {% if User.is_provider %}
+
+    {% endif %}
+      <li>
+      <form action="http://127.0.0.1:8000/menu/">
+      <input type="submit" value="show menu" />
+      </form>
+      </li>
+      <li>
+      <form action="http://127.0.0.1:8000/menu/create">
+      <input type="submit" value="create menu item" />
+      </form>
+      </li>
 
 
     {% block usernav %}
       {% if User.is_provider and User.is_active %}
       <li>
-      <form action="http://127.0.0.1:8000/accounts/kitchen/">
+      <form action="http://127.0.0.1:8000/provider/kitchen/">
       <input type="submit" value="register Kitchen" />
       </form>
       </li>

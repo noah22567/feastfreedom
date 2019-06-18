@@ -1,0 +1,15 @@
+{% include "base.html" %}
+
+<h1>Kitchens</h1>
+<ul>
+{% for item in MenuItem %}
+    <li>
+    <h4>{{MenuItem.objects.all}}</h4>
+<!--    <img src="Kitchen.Kitchenimg.url" alt="Italian Trulli">-->
+
+{% empty %}
+    <li>No items yet.</li>
+{% endfor %}
+</ul>
+
+

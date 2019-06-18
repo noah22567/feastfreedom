@@ -22,4 +22,3 @@ class CreateMenuItem(request):
     return render(request, 'CreatMenuItem.html', {'form': form})
 
 
-    

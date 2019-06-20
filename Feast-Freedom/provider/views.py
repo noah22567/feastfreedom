@@ -32,6 +32,7 @@ def registerKitchenView(request):
     if request.method == 'POST':
         form = KitchenCreate(request.POST)
         if form.is_valid():
+            request.user.make_provider()
             form.save()
             user = authenticate(username=username, password=raw_password)
             login(request, user)

@@ -1,13 +1,11 @@
 from django.db import models
-from users.models import myUser
-from django.contrib.auth.models import User
 import os
 from users.models import myUser
 # Create your models here.
 
 
-class ServiceProvider():
-    id = models.ForeignKey(myUser,on_delete=models.CASCADE)
+class ServiceProvider(models.Model):
+    userID = models.ForeignKey(myUser,on_delete=models.CASCADE)
     ServiceProviderName = models.CharField(('Service provider name'),max_length=20)
 
 

@@ -13,18 +13,20 @@ from django.utils import timezone
 from django.http import HttpResponse, HttpResponseRedirect
 from django.urls import reverse
 from menu.models import MenuItem
+from users.forms import SignUpForm
 
 def registerProviderView(request):
 
     if request.method == 'POST':
         initial = {'ServiceProviderName': request.session.get('ServiceProviderName', None)}
         form = SignupProvider(request.POST,initial=initial)
-        if form.is_valid():
+        formb = SignUpForm(request.POST, initial=initial)
+        if form.is_valid() and formb.is_valid():
             request.session['ServiceProviderName'] = form.cleaned_data['ServiceProviderName']
             return HttpResponseRedirect(reverse('registerKitchenView'))
     else:
         form = SignupProvider()
-    return render(request, 'RegisterProvider.html', {'form':form})
+    return render(request, 'RegisterProvider.html', {'form':form,'formb':formb})
 
 
 def registerKitchenView(request):

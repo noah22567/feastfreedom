@@ -1,8 +1,9 @@
 from django.db import models
 from django.contrib.auth.models import User,AbstractUser,PermissionsMixin,AbstractBaseUser
+from mainset import settings
 
 # Create your models here.
-class myUser(User):
+class myUser(AbstractBaseUser):
 
 
     is_superuser = False
@@ -17,4 +18,6 @@ class myUser(User):
                                          max_length=20,blank=False,null=False)
     def make_provider(self):
         self.is_provider = True
+
+    # something = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
 

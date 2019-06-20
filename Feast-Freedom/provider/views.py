@@ -12,6 +12,7 @@ from .models import Kitchen
 from django.utils import timezone
 from django.http import HttpResponse, HttpResponseRedirect
 from django.urls import reverse
+from menu.models import MenuItem
 
 def registerProviderView(request):
 
@@ -42,7 +43,7 @@ def registerKitchenView(request):
 
 class viewKitchen(DetailView):
     # lookup_field = pk
-    model = Kitchen
+    model = MenuItem
 
 
 class listViewKitchen(ListView):

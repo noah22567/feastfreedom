@@ -1,6 +1,6 @@
 from django.db import models
 from users.models import myUser
-
+from django.contrib.auth.models import User
 import os
 # Create your models here.
 
@@ -12,7 +12,7 @@ class ServiceProvider(myUser):
 
 class Kitchen(models.Model):
 
-    userID = models.ForeignKey(ServiceProvider,on_delete=models.CASCADE)
+    # userID = models.ForeignKey(User,on_delete=models.CASCADE)
 
     Starttime = models.TimeField(('Start Time'),auto_now=False,blank=False)
     Endtime = models.TimeField(('End Time'),auto_now=False,blank=False)

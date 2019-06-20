@@ -27,11 +27,10 @@ class KitchenCreate(forms.ModelForm):
     # Starttime = forms.CharField(max_length=30, required=True)
     # Endtime = forms.CharField(max_length=30, required=True)
     # Kitchenimg = forms.CharField(max_length=30, required=True)
-    # userID = forms.CharField(max_length=20, required=True)
 
     class Meta:
         model = Kitchen
-        fields = ["userID","Starttime","Endtime","Kitchenimg",]
+        fields = ["Starttime","Endtime","Kitchenimg",] #"UserID"
         # fields = ["Starttime","Endtime","Kitchenimg",]
 
 

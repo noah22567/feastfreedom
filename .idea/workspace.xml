@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="420636b1-7bb1-4e44-9e04-5e9860afecee" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Feast-Freedom/templates/menu/menuitem_detail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Feast-Freedom/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/Feast-Freedom/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Feast-Freedom/mainset/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/Feast-Freedom/mainset/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Feast-Freedom/menu/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/Feast-Freedom/menu/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Feast-Freedom/menu/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/Feast-Freedom/menu/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Feast-Freedom/menu/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/Feast-Freedom/menu/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Feast-Freedom/provider/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/Feast-Freedom/provider/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Feast-Freedom/provider/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/Feast-Freedom/provider/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Feast-Freedom/provider/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/Feast-Freedom/provider/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Feast-Freedom/templates/provider/kitchen_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/Feast-Freedom/templates/provider/kitchen_detail.html" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Feast-Freedom/menu/models.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <folding>
+                <element signature="e#0#28#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Feast-Freedom/provider/models.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="15" selection-start-line="15" selection-end-line="15" />
+              <folding>
+                <element signature="e#0#28#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Feast-Freedom/menu/forms.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="7" selection-start-line="7" selection-end-line="7" />
+              <folding>
+                <element signature="e#0#34#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Feast-Freedom/provider/forms.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="544">
+              <caret line="35" selection-start-line="35" selection-end-line="35" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>get</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/Feast-Freedom/menu/admin.py" />
+        <option value="$PROJECT_DIR$/Feast-Freedom/mainset/urls.py" />
+        <option value="$PROJECT_DIR$/Feast-Freedom/templates/provider/kitchen_detail.html" />
+        <option value="$PROJECT_DIR$/Feast-Freedom/provider/views.py" />
+        <option value="$PROJECT_DIR$/Feast-Freedom/templates/menu/menuitem_detail.html" />
+        <option value="$PROJECT_DIR$/Feast-Freedom/menu/views.py" />
+        <option value="$PROJECT_DIR$/Feast-Freedom/menu/forms.py" />
+        <option value="$PROJECT_DIR$/Feast-Freedom/provider/models.py" />
+        <option value="$PROJECT_DIR$/Feast-Freedom/provider/forms.py" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectConfigurationFiles">
+    <option name="files">
+      <list>
+        <option value="$PROJECT_DIR$/.idea/feastfreedom.iml" />
+        <option value="$PROJECT_DIR$/.idea/misc.xml" />
+        <option value="$PROJECT_DIR$/.idea/modules.xml" />
+        <option value="$PROJECT_DIR$/.idea/vcs.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-71" />
+    <option name="y" value="165" />
+    <option name="width" value="1320" />
+    <option name="height" value="784" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="feastfreedom" type="b2602c69:ProjectViewProjectNode" />
+              <item name="feastfreedom" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="feastfreedom" type="b2602c69:ProjectViewProjectNode" />
+              <item name="feastfreedom" type="462c0819:PsiDirectoryNode" />
+              <item name="Feast-Freedom" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="feastfreedom" type="b2602c69:ProjectViewProjectNode" />
+              <item name="feastfreedom" type="462c0819:PsiDirectoryNode" />
+              <item name="Feast-Freedom" type="462c0819:PsiDirectoryNode" />
+              <item name="mainset" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="feastfreedom" type="b2602c69:ProjectViewProjectNode" />
+              <item name="feastfreedom" type="462c0819:PsiDirectoryNode" />
+              <item name="Feast-Freedom" type="462c0819:PsiDirectoryNode" />
+              <item name="menu" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="feastfreedom" type="b2602c69:ProjectViewProjectNode" />
+              <item name="feastfreedom" type="462c0819:PsiDirectoryNode" />
+              <item name="Feast-Freedom" type="462c0819:PsiDirectoryNode" />
+              <item name="provider" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="feastfreedom" type="b2602c69:ProjectViewProjectNode" />
+              <item name="feastfreedom" type="462c0819:PsiDirectoryNode" />
+              <item name="Feast-Freedom" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="feastfreedom" type="b2602c69:ProjectViewProjectNode" />
+              <item name="feastfreedom" type="462c0819:PsiDirectoryNode" />
+              <item name="Feast-Freedom" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="menu" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="feastfreedom" type="b2602c69:ProjectViewProjectNode" />
+              <item name="feastfreedom" type="462c0819:PsiDirectoryNode" />
+              <item name="Feast-Freedom" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="provider" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\19198\Desktop\feastfreedom\Feast-Freedom\templates\menu" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="420636b1-7bb1-4e44-9e04-5e9860afecee" name="Default Changelist" comment="" />
+      <created>1560964942308</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1560964942308</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="54" y="-8" width="1320" height="784" extended-state="6" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24960998" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Version Control" order="7" weight="0.32872504" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.29953918" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Python Console" order="10" weight="0.32872504" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/Feast-Freedom/provider/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Feast-Freedom/menu/admin.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="28" selection-start-line="1" selection-start-column="28" selection-end-line="1" selection-end-column="28" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37-32/Lib/site-packages/django/forms/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="265" selection-start-line="265" selection-end-line="265" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Feast-Freedom/templates/menu/menuitem_detail.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="23" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Feast-Freedom/mainset/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="35" column="35" selection-start-line="35" selection-start-column="35" selection-end-line="35" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Feast-Freedom/menu/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="25" column="46" selection-start-line="25" selection-start-column="46" selection-end-line="25" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Feast-Freedom/provider/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="29" column="33" selection-start-line="29" selection-start-column="33" selection-end-line="29" selection-end-column="33" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Feast-Freedom/templates/provider/kitchen_detail.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="9" selection-start-line="8" selection-start-column="9" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Feast-Freedom/templates/provider/kitchen_list.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Feast-Freedom/templates/CreatMenuItem.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="30" selection-start-line="9" selection-start-column="30" selection-end-line="9" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Feast-Freedom/menu/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Feast-Freedom/provider/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Feast-Freedom/provider/forms.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="544">
+          <caret line="35" selection-start-line="35" selection-end-line="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Feast-Freedom/menu/forms.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+          <folding>
+            <element signature="e#0#34#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

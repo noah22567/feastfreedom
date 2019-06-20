@@ -9,16 +9,19 @@ class MenuList(ListView):
     model = MenuItem
 
 
-class CreateMenuItem(request):
-    if request.method == 'POST':
-        form = createMenuItem(request.POST)
-        if form.is_valid():
-            form.save()
-            user = authenticate(username=username, password=raw_password)
-            login(request, user)
-            return redirect('home')
-    else:
-        form = createMenuItem()
-    return render(request, 'CreatMenuItem.html', {'form': form})
+def CreateMenuItem(request):
 
+    # if request.method == 'POST':
+    #     form = createMenuItem(request.POST)
+    #     if form.is_valid():
+    #         form.save()
+    #         user = authenticate(username=username, password=raw_password)
+    #         login(request, user)
+    #         return redirect('home')
+    # else:
+    #     form = createMenuItem(instance=MenuItem)
+    # return render(request, 'CreatMenuItem.html', {'form': form})
+
+    form = createMenuItem()
+    return render(request, 'CreatMenuItem.html', {'form': form})
 

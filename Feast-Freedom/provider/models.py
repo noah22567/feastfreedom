@@ -7,7 +7,7 @@ from users.models import myUser
 
 
 class ServiceProvider():
-    id = models.ForeignKey(myUser,)
+    id = models.ForeignKey(myUser,on_delete=models.CASCADE)
     ServiceProviderName = models.CharField(('Service provider name'),max_length=20)
 
 
